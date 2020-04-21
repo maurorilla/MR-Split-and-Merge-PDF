@@ -33,7 +33,7 @@ namespace MR_Split_and_Merge_PDF
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://github.com/maurorilla/MR Split and Merge PDF");
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://github.com/maurorilla/MR-Split-and-Merge-PDF");
             Process.Start(sInfo);
         }
     }
