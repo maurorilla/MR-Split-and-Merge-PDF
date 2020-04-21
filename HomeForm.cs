@@ -1,4 +1,4 @@
-﻿using MR_PDF_Tools;
+﻿using MR_Split_and_Merge_PDF;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +21,7 @@ namespace MR_Split_and_Merge_PDF
 
         private void btnMerge_Click(object sender, EventArgs e)
         {
-            var f1 = new MainForm();
+            var f1 = new MergeForm();
             f1.ShowDialog(this);
         }
 

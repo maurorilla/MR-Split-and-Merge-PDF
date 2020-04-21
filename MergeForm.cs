@@ -12,11 +12,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MR_PDF_Tools
+namespace MR_Split_and_Merge_PDF
 {
-    public partial class MainForm : Form
+    public partial class MergeForm : Form
     {
-        public MainForm()
+        public MergeForm()
         {
             InitializeComponent();
         }
