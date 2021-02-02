@@ -38,7 +38,7 @@
             // 
             this.btnSplit.Image = global::MR_Split_and_Merge_PDF.Properties.Resources.Split_24;
             this.btnSplit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSplit.Location = new System.Drawing.Point(187, 22);
+            this.btnSplit.Location = new System.Drawing.Point(194, 22);
             this.btnSplit.Margin = new System.Windows.Forms.Padding(2);
             this.btnSplit.Name = "btnSplit";
             this.btnSplit.Size = new System.Drawing.Size(136, 50);
@@ -62,21 +62,22 @@
             // 
             // linkLabel1
             // 
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(11, 93);
+            this.linkLabel1.Location = new System.Drawing.Point(19, 101);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(331, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(334, 13);
             this.linkLabel1.TabIndex = 17;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Developer By Mauro Rilla  - Click for source code and AGPL License";
+            this.linkLabel1.Text = "Developed By Mauro Rilla  - Click for source code and AGPL License";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(346, 115);
+            this.ClientSize = new System.Drawing.Size(529, 123);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btnSplit);
             this.Controls.Add(this.btnMerge);

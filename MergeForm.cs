@@ -29,7 +29,7 @@ namespace MR_Split_and_Merge_PDF
                 return;
             }
             var SFD = new SaveFileDialog();
-            SFD.FileName = $"PDF_{DateTime.Now:dd_MM_yyyy_HHmm}.pdf";
+            SFD.FileName = $"PDF_{DateTime.Now:dd_MM_yyyy_HHmmss}.pdf";
             SFD.Filter = "File PDF|*.PDF";
             if (SFD.ShowDialog() == DialogResult.OK)
             {
@@ -150,6 +150,8 @@ namespace MR_Split_and_Merge_PDF
                     FileList.Items[i].Text = FF;
 
                     FileList.SelectedItems.Clear();
+                    FileList.Items[i - 1].Focused = true;
+                    FileList.Items[i - 1].Selected = true;
                 }
             }
         }
@@ -170,6 +172,8 @@ namespace MR_Split_and_Merge_PDF
                     FileList.Items[i].Text = FF;
 
                     FileList.SelectedItems.Clear();
+                    FileList.Items[i + 1].Focused = true;
+                    FileList.Items[i + 1].Selected = true;
                 }
             }
         }

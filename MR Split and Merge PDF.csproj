@@ -112,6 +112,13 @@
     <None Include="Resources\Split_24.png" />
     <None Include="Resources\Merge_24.png" />
     <None Include="Resources\Merge.png" />
+    <None Include="Resources\AddImages.png" />
+    <None Include="Resources\Delete.png" />
+    <None Include="Resources\Down.png" />
+    <None Include="Resources\Options.png" />
+    <None Include="Resources\Page.png" />
+    <None Include="Resources\PDF_Save.png" />
+    <None Include="Resources\Up.png" />
     <Content Include="Split_Merge.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
