@@ -29,68 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MergeForm));
-            this.btnAddJPG = new System.Windows.Forms.Button();
-            this.btnMoveUp = new System.Windows.Forms.Button();
-            this.btnDown = new System.Windows.Forms.Button();
-            this.btnRemove = new System.Windows.Forms.Button();
             this.FileList = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnRemoveAll = new System.Windows.Forms.Button();
             this.ckFolder = new System.Windows.Forms.CheckBox();
+            this.btnRemoveAll = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnDown = new System.Windows.Forms.Button();
+            this.btnMoveUp = new System.Windows.Forms.Button();
+            this.btnAddJPG = new System.Windows.Forms.Button();
             this.btnJpgToPDF = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnAddJPG
-            // 
-            this.btnAddJPG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAddJPG.Image = global::MR_Split_and_Merge_PDF.Properties.Resources.PDF_Save_24_x24;
-            this.btnAddJPG.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddJPG.Location = new System.Drawing.Point(8, 446);
-            this.btnAddJPG.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddJPG.Name = "btnAddJPG";
-            this.btnAddJPG.Size = new System.Drawing.Size(112, 39);
-            this.btnAddJPG.TabIndex = 3;
-            this.btnAddJPG.Text = "Add PDF";
-            this.btnAddJPG.UseVisualStyleBackColor = true;
-            this.btnAddJPG.Click += new System.EventHandler(this.btnAddPDF_Click);
-            // 
-            // btnMoveUp
-            // 
-            this.btnMoveUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMoveUp.Image = global::MR_Split_and_Merge_PDF.Properties.Resources.Up;
-            this.btnMoveUp.Location = new System.Drawing.Point(772, 9);
-            this.btnMoveUp.Margin = new System.Windows.Forms.Padding(2);
-            this.btnMoveUp.Name = "btnMoveUp";
-            this.btnMoveUp.Size = new System.Drawing.Size(42, 42);
-            this.btnMoveUp.TabIndex = 5;
-            this.btnMoveUp.UseVisualStyleBackColor = true;
-            this.btnMoveUp.Click += new System.EventHandler(this.btnMoveUp_Click);
-            // 
-            // btnDown
-            // 
-            this.btnDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDown.Image = global::MR_Split_and_Merge_PDF.Properties.Resources.Down;
-            this.btnDown.Location = new System.Drawing.Point(772, 395);
-            this.btnDown.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDown.Name = "btnDown";
-            this.btnDown.Size = new System.Drawing.Size(42, 42);
-            this.btnDown.TabIndex = 6;
-            this.btnDown.UseVisualStyleBackColor = true;
-            this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnRemove.Image = global::MR_Split_and_Merge_PDF.Properties.Resources.Delete;
-            this.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRemove.Location = new System.Drawing.Point(124, 446);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(159, 39);
-            this.btnRemove.TabIndex = 7;
-            this.btnRemove.Text = "Remove From List";
-            this.btnRemove.UseVisualStyleBackColor = true;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // FileList
             // 
@@ -117,6 +65,20 @@
             this.columnHeader1.Text = "FileName";
             this.columnHeader1.Width = 944;
             // 
+            // ckFolder
+            // 
+            this.ckFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ckFolder.AutoSize = true;
+            this.ckFolder.Checked = true;
+            this.ckFolder.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ckFolder.Location = new System.Drawing.Point(454, 458);
+            this.ckFolder.Margin = new System.Windows.Forms.Padding(2);
+            this.ckFolder.Name = "ckFolder";
+            this.ckFolder.Size = new System.Drawing.Size(136, 17);
+            this.ckFolder.TabIndex = 15;
+            this.ckFolder.Text = "Open Folder after Save";
+            this.ckFolder.UseVisualStyleBackColor = true;
+            // 
             // btnRemoveAll
             // 
             this.btnRemoveAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -131,18 +93,57 @@
             this.btnRemoveAll.UseVisualStyleBackColor = true;
             this.btnRemoveAll.Click += new System.EventHandler(this.btnRemoveAll_Click);
             // 
-            // ckFolder
+            // btnRemove
             // 
-            this.ckFolder.AutoSize = true;
-            this.ckFolder.Checked = true;
-            this.ckFolder.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckFolder.Location = new System.Drawing.Point(459, 446);
-            this.ckFolder.Margin = new System.Windows.Forms.Padding(2);
-            this.ckFolder.Name = "ckFolder";
-            this.ckFolder.Size = new System.Drawing.Size(136, 17);
-            this.ckFolder.TabIndex = 15;
-            this.ckFolder.Text = "Open Folder after Save";
-            this.ckFolder.UseVisualStyleBackColor = true;
+            this.btnRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnRemove.Image = global::MR_Split_and_Merge_PDF.Properties.Resources.Delete;
+            this.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRemove.Location = new System.Drawing.Point(124, 446);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(159, 39);
+            this.btnRemove.TabIndex = 7;
+            this.btnRemove.Text = "Remove From List";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+            // 
+            // btnDown
+            // 
+            this.btnDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDown.Image = global::MR_Split_and_Merge_PDF.Properties.Resources.Down;
+            this.btnDown.Location = new System.Drawing.Point(772, 395);
+            this.btnDown.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDown.Name = "btnDown";
+            this.btnDown.Size = new System.Drawing.Size(42, 42);
+            this.btnDown.TabIndex = 6;
+            this.btnDown.UseVisualStyleBackColor = true;
+            this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
+            // 
+            // btnMoveUp
+            // 
+            this.btnMoveUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMoveUp.Image = global::MR_Split_and_Merge_PDF.Properties.Resources.Up;
+            this.btnMoveUp.Location = new System.Drawing.Point(772, 9);
+            this.btnMoveUp.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMoveUp.Name = "btnMoveUp";
+            this.btnMoveUp.Size = new System.Drawing.Size(42, 42);
+            this.btnMoveUp.TabIndex = 5;
+            this.btnMoveUp.UseVisualStyleBackColor = true;
+            this.btnMoveUp.Click += new System.EventHandler(this.btnMoveUp_Click);
+            // 
+            // btnAddJPG
+            // 
+            this.btnAddJPG.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAddJPG.Image = global::MR_Split_and_Merge_PDF.Properties.Resources.PDF_Save_24_x24;
+            this.btnAddJPG.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddJPG.Location = new System.Drawing.Point(8, 446);
+            this.btnAddJPG.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddJPG.Name = "btnAddJPG";
+            this.btnAddJPG.Size = new System.Drawing.Size(112, 39);
+            this.btnAddJPG.TabIndex = 3;
+            this.btnAddJPG.Text = "Add PDF";
+            this.btnAddJPG.UseVisualStyleBackColor = true;
+            this.btnAddJPG.Click += new System.EventHandler(this.btnAddPDF_Click);
             // 
             // btnJpgToPDF
             // 
@@ -179,7 +180,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(840, 535);
             this.Name = "MergeForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Merge PDF ";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);

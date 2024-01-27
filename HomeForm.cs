@@ -21,7 +21,7 @@ namespace MR_Split_and_Merge_PDF
 
         private void btnMerge_Click(object sender, EventArgs e)
         {
-            var f1 = new MergeForm();
+            var f1 = new MergeForm();            
             f1.ShowDialog(this);
         }
 

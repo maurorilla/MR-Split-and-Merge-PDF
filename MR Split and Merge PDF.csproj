@@ -119,6 +119,7 @@
     <None Include="Resources\Page.png" />
     <None Include="Resources\PDF_Save.png" />
     <None Include="Resources\Up.png" />
+    <None Include="Resources\00562-3974943024.png" />
     <Content Include="Split_Merge.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

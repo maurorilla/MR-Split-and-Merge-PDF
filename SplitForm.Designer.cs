@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplitForm));
             this.btnSelectPDF = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtFile = new System.Windows.Forms.TextBox();
             this.lblPages = new System.Windows.Forms.Label();
             this.pBar = new System.Windows.Forms.ProgressBar();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSelectPDF
@@ -47,19 +47,6 @@
             this.btnSelectPDF.Text = "Select PDF to Split";
             this.btnSelectPDF.UseVisualStyleBackColor = true;
             this.btnSelectPDF.Click += new System.EventHandler(this.btnSelectPDF_Click);
-            // 
-            // button1
-            // 
-            this.button1.Image = global::MR_Split_and_Merge_PDF.Properties.Resources.Split_24;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(466, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 42);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Split PDF";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -105,6 +92,19 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // button1
+            // 
+            this.button1.Image = global::MR_Split_and_Merge_PDF.Properties.Resources.Split_24;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(466, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 42);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Split PDF";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // SplitForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,6 +122,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SplitForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Split PDF in Pages";
             this.ResumeLayout(false);
             this.PerformLayout();
